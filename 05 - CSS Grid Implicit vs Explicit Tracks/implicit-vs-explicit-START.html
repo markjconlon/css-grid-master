@@ -14,6 +14,11 @@
     <div class="item">2</div>
     <div class="item">3</div>
     <div class="item">4</div>
+    <!-- we didn't explicity define sizing for these rows
+    they will fill into columns just fine and the browser will
+    define the rows-->
+    <div class="item">5</div>
+    <div class="item">6</div>
   </div>
 
   <style>
@@ -25,7 +30,9 @@
       /* solid line is where the explicit grid has been created */
       /* explicitly define what the columns will be */
       /* rows we did not create them, then we are referring as implicit */
-
+      grid-auto-rows:500px;
+      /* after adding grid auto rows next rows will take row height from here,
+      you can pass multiple values (some browsers didn't initially support this */
     }
   </style>
 </body>
