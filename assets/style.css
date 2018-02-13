@@ -6,6 +6,7 @@
   Let's go through the important bits real quick
 */
 :root {
+  /* Allows you to assign variables and call them in styles with var(--name) */
   --yellow: #ffc600;
   --black: #272727;
 }
