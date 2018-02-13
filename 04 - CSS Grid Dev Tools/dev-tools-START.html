@@ -24,7 +24,12 @@
 
   <style>
     .container {
+      /* tracks are numbered by the start and stop columns or rows */
+      /* dark dashed lines go vertically and are the explicit grid we made them*/
+      /* dotted lines are implicitly created (the browser created them) */
       display: grid;
+      grid-template-columns: 100px 200px;
+      grid-gap: 20px;
     }
   </style>
 </body>
